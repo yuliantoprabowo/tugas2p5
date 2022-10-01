@@ -61,11 +61,13 @@ public class Main {
         harga = sc.nextInt();
         System.out.println("Qty : ");
         qty = sc.nextInt();
-        do{
-            System.out.println("Qty minimal 1 ");
-            System.out.println("Qty : ");
-            qty = sc.nextInt();
-        }while (qty <= 0);
+        if(qty <= 0) {
+            do{
+                System.out.println("Qty minimal 1 ");
+                System.out.println("Qty : ");
+                qty = sc.nextInt();
+            }while (qty <= 0);
+        }
 
         listPesan.add(new Pesan(nama,gula,harga,qty));
 
