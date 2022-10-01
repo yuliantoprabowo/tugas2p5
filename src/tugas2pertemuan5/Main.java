@@ -55,12 +55,12 @@ public class Main {
 
         System.out.println("Nama : ");
         nama = sc.nextLine();
-        if (!nama.equalsIgnoreCase("americano") && !nama.equalsIgnoreCase("Latte") && !nama.equalsIgnoreCase("arabika")) {
+        if (!nama.equalsIgnoreCase("americano") && !nama.equalsIgnoreCase("latte") && !nama.equalsIgnoreCase("arabika")) {
             do {
-                System.out.println("Nama Pesanan Tidak Sesuai.");
+                System.out.println("Nama Pesanan Tidak Sesuai...");
                 System.out.println("Nama : ");
                 nama = sc.nextLine();
-            } while(!nama.equalsIgnoreCase("americano") && !nama.equalsIgnoreCase("Latte") &&!nama.equalsIgnoreCase("arabika"));
+            } while(!nama.equalsIgnoreCase("americano") && !nama.equalsIgnoreCase("latte") &&!nama.equalsIgnoreCase("arabika"));
         }
         System.out.println("Gula :");
         gula = sc.nextLine();
